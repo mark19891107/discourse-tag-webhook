@@ -2,6 +2,8 @@ var request = require('request');
 
 module.exports = function (context,cb) {
 
+  console.log(context.data)
+
   var formData = {
       raw: "我是 範本 哈哈",
       title: "我是  範本   哈哈",
