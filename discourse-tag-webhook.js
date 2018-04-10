@@ -4,11 +4,8 @@ module.exports = function (context,cb) {
 
   console.log(context.data)
 
-  var formData = {
-      raw: "我是 範本 哈哈",
-      title: "我是  範本   哈哈",
-      category: 12
-  };
+  var formData = context.data;
+  formData.category = 12;
 
   request.post(
     {
