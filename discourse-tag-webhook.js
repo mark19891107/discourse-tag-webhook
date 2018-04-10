@@ -2,7 +2,7 @@ var request = require('request');
 
 module.exports = function (context,cb) {
 
-  console.log(context.data)
+  console.log(context.data.title)
 
   var formData = context.data;
   formData.category = 12;
