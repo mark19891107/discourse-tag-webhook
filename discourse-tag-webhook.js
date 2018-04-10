@@ -4,7 +4,7 @@ module.exports = function (context,cb) {
 
   console.log(context.data)
 
-  var formData = context.data;
+  var formData = context.data.topic.title;
   formData.category = 12;
 
   // request.post(
