@@ -8,7 +8,7 @@ module.exports = function (context, cb) {
   var topic_tags = context.data.topic.tags.slice();
   var new_tags = context.data.topic.tags.slice();
   
-  new_tags.push("開放政府")
+  new_tags = AddTags(new_tags);
 
   if (new_tags.some(val => topic_tags.indexOf(val) === -1)) {
     request.put(
